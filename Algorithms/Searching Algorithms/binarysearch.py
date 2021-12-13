@@ -22,7 +22,7 @@ def binary_search(arr, x):
  
  
 # Test array
-arr = [ 2, 3, 4, 10, 40 ]
+arr = [ 2, 3, 4, 10, 40 ]  #the array should be sorted otherwise it will not work
 x = 40
  
 result = binary_search(arr, x)
