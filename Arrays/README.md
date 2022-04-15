@@ -1,2 +1,2 @@
 # Arrays in Python
-In this folder I am going to put the programs and solve problems related to Arrays.
+In this repository I will try to solve coding problems using Python. The coding questions will vary according to the difficulty of the problem.
