@@ -1,4 +1,4 @@
-def CountUnion(a,b):
+def CountUnion(a, b):
     count = len(a) + len(b)
     for i in b:
         if i in a:
@@ -6,10 +6,8 @@ def CountUnion(a,b):
     return count
 
 
-a = [1,2,3,4]
-b= [3,4,5]
+a = [1, 2, 3, 4]
+b = [3, 4, 5]
 
-result = CountUnion(a,b)
+result = CountUnion(a, b)
 print(result)
-
-    

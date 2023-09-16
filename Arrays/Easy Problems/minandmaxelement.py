@@ -1,4 +1,4 @@
-def MinMax(a,n):
+def MinMax(a, n):
     minE = 0
     maxE = 0
     for i in range(n):
@@ -12,7 +12,7 @@ def MinMax(a,n):
 
 
 if __name__ == '__main__':
-    arr = [1,12,0,4,2]
+    arr = [1, 12, 0, 4, 2]
     n = len(arr)
-    result = MinMax(arr,n)
+    result = MinMax(arr, n)
     print(result[0], result[1])

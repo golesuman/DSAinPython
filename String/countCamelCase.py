@@ -6,9 +6,11 @@ def counter(string):
 
     return count
 
+
 def main():
-    c=counter('heySumanWhatAreYouDoing')
+    c = counter('heySumanWhatAreYouDoing')
     print(c)
+
 
 if __name__ == '__main__':
     main()

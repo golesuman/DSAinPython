@@ -1,5 +1,6 @@
 import collections
-stack=collections.deque()
+
+stack = collections.deque()
 print(stack)
 stack.append(5)
 print(stack)

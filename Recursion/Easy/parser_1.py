@@ -1,5 +1,6 @@
 import re
 
+
 class SQLParser:
     def __init__(self):
         self.current_token = None
@@ -10,7 +11,7 @@ class SQLParser:
         self.tokens = re.findall(r'\w+|!=|<=|>=|[(),=*]', input_sql)
         self.index = 0
         self.current_token = self.tokens[self.index]
-        
+
         self.sql()
 
     def match(self, expected_token):

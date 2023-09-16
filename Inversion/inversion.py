@@ -10,19 +10,22 @@ class Switchable(ABC):
     def turn_on(self):
         pass
 
+
 class LightBulb(Switchable):
     def switch_off(self):
         print("turned off")
-    
+
     def turn_on(self):
         print("turned on")
+
 
 class Fan(Switchable):
     def switch_off(self):
         print("Switched off")
-    
+
     def turn_on(self, client):
         print(f"{client.__class__.__name__} turned on")
+
 
 class PowerSwitch:
     def __init__(self, c) -> None:

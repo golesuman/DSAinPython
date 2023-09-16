@@ -13,8 +13,7 @@ def decode_string(encoded_string):
     for char in encoded_string:
         if char not in remove_symbols:
             result.append(char)
-        
-  
+
     return "".join(result)
 
 
@@ -23,5 +22,3 @@ if __name__ == "__main__":
     encoded_string = encode(input_string)
     decoded_string = decode_string(encoded_string)
     print(decoded_string)
-
-    

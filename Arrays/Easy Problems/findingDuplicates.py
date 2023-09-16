@@ -1,8 +1,9 @@
-def findingDuplicates(arr,size):
+def findingDuplicates(arr, size):
     arr.sort()
     for i in range(size):
-        if arr[i] == arr[i+1]:
+        if arr[i] == arr[i + 1]:
             return arr[i]
+
 
 if __name__ == '__main__':
     print("Enter the size of an array:")
@@ -15,4 +16,3 @@ if __name__ == '__main__':
 
     result = findingDuplicates(arr, size)
     print(f'The duplicate element is {result}')
-        

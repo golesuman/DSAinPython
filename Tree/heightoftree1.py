@@ -2,22 +2,22 @@
 
 
 class Node:
-    def __init__(self,val=None) -> None:
+    def __init__(self, val=None) -> None:
         self.val = val
         self.right = None
         self.left = None
 
+
 def Insert(root, val):
     if root is None:
         return Node(val)
-    else: 
+    else:
         if val > root.val:
             root.right = Insert(root.right, val)
         elif val < root.val:
             root.left = Insert(root.left, val)
     return root
 
-        
 
 def height(root):
     p = root
@@ -35,4 +35,3 @@ if __name__ == '__main__':
     root = Insert(root, 0)
     h = height(root)
     print(h)
-    

@@ -14,6 +14,6 @@ def valid_palindrome(input_string):
 
 
 if __name__ == "__main__":
-    tests = ['civic', 'radar', 'level', 'rotor', 'kayak', 'madam',  'refer']
+    tests = ['civic', 'radar', 'level', 'rotor', 'kayak', 'madam', 'refer']
     for test in tests:
         print(valid_palindrome(test))

@@ -11,7 +11,7 @@ if __name__ == '__main__':
     print("Enter the size of an array")
     size = int(input())
     print("Enter the elements of an array:")
-    i = 0 
+    i = 0
     arr = []
     while i < size:
         ele = int(input())

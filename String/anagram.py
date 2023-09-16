@@ -8,8 +8,9 @@ def anagram(word1, word2):
         return True
     return False
 
+
 if __name__ == '__main__':
     t = input('')
-    s= input('')
-    result= anagram(t,s)
+    s = input('')
+    result = anagram(t, s)
     print(result)

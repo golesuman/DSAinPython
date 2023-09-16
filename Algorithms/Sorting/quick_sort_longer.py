@@ -1,5 +1,4 @@
 def partition(array, low, high):
-
     # choose the rightmost element as pivot
     pivot = array[high]
 
@@ -18,7 +17,6 @@ def partition(array, low, high):
 
 def quickSort(array, low, high):
     if low < high:
-
         pi = partition(array, low, high)
 
         # recursive call on the left of pivot

@@ -6,7 +6,7 @@ def replaceChar(arr, a, b):
     if len(arr) == 0:
         return arr
 
-    smallOutput = replaceChar(arr[1:] , a, b)
+    smallOutput = replaceChar(arr[1:], a, b)
 
     if arr[0] == a:
         return b + smallOutput

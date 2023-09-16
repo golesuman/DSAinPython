@@ -2,18 +2,17 @@
 
 
 class Node:
-    def __init__(self,data) -> None:
+    def __init__(self, data) -> None:
         self.data = data
         self.right = None
         self.left = None
-    
+
 
 def postorder(root):
     if root:
         postorder(root.left)
         postorder(root.right)
         print(root.data)
-
 
 
 root = Node(1)

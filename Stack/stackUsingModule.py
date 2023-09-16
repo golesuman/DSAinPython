@@ -1,5 +1,6 @@
 import queue
-stack=queue.LifoQueue(5)
+
+stack = queue.LifoQueue(5)
 stack.put(3)
 stack.put(5)
 stack.put(8)

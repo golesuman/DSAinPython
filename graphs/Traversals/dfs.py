@@ -1,10 +1,10 @@
 class Graph:
-    def __init__(self,gdict=None) -> None:
+    def __init__(self, gdict=None) -> None:
         if gdict is None:
             gdict = {}
         self.gdict = gdict
 
-    def addEdge(self,vertex,edge):
+    def addEdge(self, vertex, edge):
         self.gdict[vertex].append(edge)
 
     def dfs(self, vertex):
@@ -18,17 +18,15 @@ class Graph:
                     visited.append(adjacentVertex)
                     stack.append(adjacentVertex)
 
+
 if __name__ == '__main__':
-    content = { 'a':['b','d'],
-                'b':['a','c'],
-                'c':['b','g'],
-                'd':['a','e'],
-                'e':['d','f'],
-                'f':['e','g'],
-                'g':['c','f']
-    }
+    content = {'a': ['b', 'd'],
+               'b': ['a', 'c'],
+               'c': ['b', 'g'],
+               'd': ['a', 'e'],
+               'e': ['d', 'f'],
+               'f': ['e', 'g'],
+               'g': ['c', 'f']
+               }
     graph = Graph(content)
     graph.dfs('a')
-    
-
-

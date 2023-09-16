@@ -1,13 +1,13 @@
 class Graph:
-    def __init__(self,gdict=None) -> None:
+    def __init__(self, gdict=None) -> None:
         if gdict is None:
             gdict = {}
         self.gdict = gdict
 
-    def addEdge(self,vertex, edge):
+    def addEdge(self, vertex, edge):
         self.gdict[vertex].append(edge)
 
-    def Bfs(self,vertex):
+    def Bfs(self, vertex):
         queue = [vertex]
         visited = [vertex]
         while queue:
@@ -18,15 +18,16 @@ class Graph:
                     visited.append(adjancentVertex)
                     queue.append(adjancentVertex)
 
+
 if __name__ == '__main__':
-    content = { 'a':['b','d'],
-                'b':['a','c'],
-                'c':['b','g'],
-                'd':['a','e'],
-                'e':['d','f'],
-                'f':['e','g'],
-                'g':['c','f']
-    }
+    content = {'a': ['b', 'd'],
+               'b': ['a', 'c'],
+               'c': ['b', 'g'],
+               'd': ['a', 'e'],
+               'e': ['d', 'f'],
+               'f': ['e', 'g'],
+               'g': ['c', 'f']
+               }
 
 graph = Graph(content)
 graph.Bfs('a')

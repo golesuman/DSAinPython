@@ -9,7 +9,6 @@ def product_except_self(arr):
         result.append(product)
 
     return result
-                
 
     # pass
 
