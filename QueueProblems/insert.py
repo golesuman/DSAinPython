@@ -1,22 +1,22 @@
-queue = []
+queue_list = []
 
 
 def insert_element():
     element = int(input("Enter the element:"))
-    queue.append(element)
-    print(f'{element} is added to the queue')
+    queue_list.append(element)
+    print(f"{element} is added to the queue")
 
 
 def delete_element():
-    if not queue:
+    if not queue_list:
         print("The queue is empty")
     else:
-        e = queue.pop()
+        e = queue_list.pop()
         print("The deleted element is", e)
 
 
 def show_element():
-    print(queue)
+    print(queue_list)
 
 
 while True:

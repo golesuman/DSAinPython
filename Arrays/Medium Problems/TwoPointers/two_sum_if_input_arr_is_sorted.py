@@ -9,8 +9,8 @@ def two_sum_array_is_sorted(arr, target):
 
 
 if __name__ == "__main__":
-    arr = [2, 3, 5, 8]
-    target = 8
+    arr = [-1, 0]
+    target = -1
 
     result = two_sum_array_is_sorted(arr, target)
     print(result)
