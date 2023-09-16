@@ -1,6 +1,3 @@
-from multiprocessing import cpu_count
-
-
 def frequencyofGivenNumber(arr, n, x):
     count = 0
     for i in range(n):

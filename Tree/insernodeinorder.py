@@ -1,6 +1,3 @@
-from platform import node
-
-
 class Node:
     def __init__(self, val=None) -> None:
         self.val = val

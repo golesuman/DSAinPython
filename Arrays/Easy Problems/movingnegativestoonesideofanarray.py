@@ -1,7 +1,3 @@
-from curses import newpad
-from xml.etree.ElementTree import Element
-
-
 def MoveNegatives(arr, n):
     j = 0
     for i in range(n):

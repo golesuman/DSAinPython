@@ -1,7 +1,3 @@
-from cgitb import small
-from dataclasses import replace
-
-
 def replaceChar(arr, a, b):
     if len(arr) == 0:
         return arr
@@ -14,6 +10,6 @@ def replaceChar(arr, a, b):
         return arr[0] + smallOutput
 
 
-if __name__ == '__main__':
-    arr = 'arbapatiman'
-    print(replaceChar(arr, 'a', 'b'))
+if __name__ == "__main__":
+    arr = "arbapatiman"
+    print(replaceChar(arr, "a", "b"))
